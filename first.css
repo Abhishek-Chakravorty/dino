@@ -1,0 +1,62 @@
+:root{
+    --tr:150px ;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url("pic1.jpg") ;
+    background-size: auto 100vh;  
+}
+#dino{
+    background-image: url("dino.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:120px;
+    height:100px;
+    position:absolute;
+    bottom:0;
+    margin:50px;
+    /* border: red solid; */
+    
+}
+.turtle{
+    background-image: url("turtle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:70px;
+    height:70px;
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin:50px;
+    /* border: red solid; */
+}
+.turtle1{
+    animation:turtle 3s linear infinite;
+}
+@keyframes dino{
+    0%{}
+    50%{bottom:300px;}
+    100%{bottom:0;}
+}
+@keyframes turtle{
+    0%{}
+    100%{right:100vw;}
+}
+.animate-dino{
+    animation: dino 1s linear ;
+}
+#score{
+    width:400px;
+    background-color: blueviolet;
+    font-size: 40px;
+    position:relative;
+    top:200px;
+    margin:auto;
+    border:solid blue;
+    text-align: center;
+    display:none;
+    
+}
